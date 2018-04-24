@@ -1,5 +1,4 @@
 library(tidyverse)
-library(RMySQL)
 library(baseballr)
 library(lubridate)
 
