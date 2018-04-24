@@ -15,6 +15,11 @@ rows <- list()
 pitcher_rows <- list()
 
 for (i in seq(1,nrow(game_dates))) {
+  dat <- scrape_statcast_savant_batter_all(start_dates[i], end_dates[i])
+  rows[[i]] <- dat
+}
+
+for (i in seq(1,nrow(game_dates))) {
   dat <- scrape_statcast_savant_pitcher_all(start_dates[i], end_dates[i])
   pitcher_rows[[i]] <- dat
 }
