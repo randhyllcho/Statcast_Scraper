@@ -20,10 +20,9 @@ for (i in seq(1,nrow(game_dates))) {
   pitcher_rows[[i]] <- dat
 }; skrrrahh(43)
 
-hitter_data <- rbind_list(rows)
+#hitter_data <- rbind_list(rows)
 pitcher_data <- do.call(rbind, pitcher_rows)
 
-
-write.csv(hitter_data, "marapr2018_Hitters.csv", row.names = FALSE)
+#write.csv(hitter_data, "marapr2018_Hitters.csv", row.names = FALSE)
 write.csv(pitcher_data, "season2018_Pitchers.csv", row.names = FALSE)
 
